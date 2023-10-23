@@ -29,7 +29,7 @@ SECRET_KEY = "django-insecure-8^c466j8kk=2-8vnlb9cn#a9$q4mvxz&hfa5#n@n%^dey-k6o2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [".vercel.app"]
 
 
 # Application definition
@@ -129,4 +129,4 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # TODO: change when deployed
-CSRF_TRUSTED_ORIGINS = ["https//*.vercel.com"]
+CSRF_TRUSTED_ORIGINS = ["*"]
