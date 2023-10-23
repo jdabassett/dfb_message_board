@@ -129,4 +129,4 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # TODO: change when deployed
-CSRF_TRUSTED_ORIGINS = ["*"]
+# CSRF_TRUSTED_ORIGINS = ["*"]
