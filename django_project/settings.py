@@ -29,7 +29,7 @@ SECRET_KEY = "django-insecure-8^c466j8kk=2-8vnlb9cn#a9$q4mvxz&hfa5#n@n%^dey-k6o2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".vercel.app"]
+ALLOWED_HOSTS = [".vercel.app","localhost","127.0.0.1"]
 
 
 # Application definition
@@ -48,7 +48,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    "whitenoise.middleware.whiteNoiseMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -130,3 +130,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # TODO: change when deployed
 # CSRF_TRUSTED_ORIGINS = ["*"]
+# CORS_ALLOW_ALL_ORIGINS = True
